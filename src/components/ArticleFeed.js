@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import client from '../apollo';
-import gql from 'graphql-tag';
+
+import React, { useState } from 'react'; // impordime 
+import client from '../apollo'; // impordime 
+import gql from 'graphql-tag'; // impordime 
 
 import Article from './Article';
 
-
-const query = gql`
+// see asi 
+const query = gql` 
 query {
     articles {
       title
@@ -35,6 +36,7 @@ const ArticleFeed = () => {
                 key={i} 
                 /> 
             )}
+            <a href="https://newsapi.org/" target="_blank">Made with NewsApi.org</a>
         </div>
     )
 }
